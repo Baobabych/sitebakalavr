@@ -1,0 +1,155 @@
+body 
+{
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+h1{
+  text-align: center; /* Вирівнюємо текст по центру */
+  font-family: 'Pattaya', sans-serif; /* Задаємо шрифт "Pattaya" */
+  font-size: 32px; /* Збільшуємо розмір шрифту */
+  border-bottom: 2px dotted black; /* Додаємо підкреслення у вигляді крапочок */
+}
+#quiz 
+{
+  margin: auto;
+  width: 60vw; /* Збільшуємо ширину рамки вікторини */
+  padding: 50px; /* Збільшуємо внутрішній відступ рамки вікторини */
+  background-color: #f8f8f8;
+  border: 1px solid black;
+}
+.quizContent {
+  margin: auto;
+  width: 60vw; /* Збільшуємо ширину рамки вікторини */
+  padding: 50px; /* Збільшуємо внутрішній відступ рамки вікторини */
+  background-color: #f8f8f8;
+  border: 1px solid black;
+}
+
+#quiz li a{
+  color: blue !important;
+}
+
+.question 
+{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.answers 
+{
+  margin-bottom: 20px;
+}
+#submit 
+{
+  display: block; /* Робимо кнопку блочним елементом */
+  margin: 20px auto; /* Відцентровуємо кнопку */
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+#submit:hover 
+{
+  background-color: #444;
+  cursor: pointer;
+}
+#res
+{
+  font-family: "Alegreya SC";
+  font-size: 28px;
+  font-weight: 500;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.quiz-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.question-card {
+  margin: 25px 0;
+  padding: 25px;
+  border-left: 5px solid #000;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.question-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #000 50%, transparent 50%);
+  background-size: 20px 100%;
+}
+
+.answer-option {
+  display: block;
+  margin: 15px 0;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+  color: #000;
+}
+
+.answer-option:hover {
+  background: #000;
+  color: #fff;
+  transform: translateX(10px);
+}
+
+button[type="submit"] {
+  background: #000;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background: #333;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.question-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #ddd;
+  border-radius: 3px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #000;
+  transition: width 0.5s ease;
+}
